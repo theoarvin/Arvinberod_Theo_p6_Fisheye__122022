@@ -72,7 +72,6 @@ function filterMedia(media, picture, mediaUser, user,mediaModel) {
     newSelect.nextSibling.classList.toggle('select-hide')
     newSelect.classList.toggle("active")
     let bolleanAria = newSelect.getAttribute('aria-expanded')
-    console.log(bolleanAria);
     if(bolleanAria === 'true'){
       newSelect.setAttribute('aria-expanded',false)
       newMenu.setAttribute('aria-hidden',true);
@@ -90,7 +89,6 @@ function filterMedia(media, picture, mediaUser, user,mediaModel) {
 
   const filterFunction = () => {
     let value = newSelect.innerHTML
-    console.log(newSelect.innerHTML);
     let block = document.querySelector(".media-block");
 
     if (value === "Popularite") {

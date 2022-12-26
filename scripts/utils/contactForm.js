@@ -116,6 +116,9 @@ form.addEventListener("submit", (e) => {
     validEmail(form.email)&&
     validMessage(form.message)
     ){
-    console.log('vous avez bien envoyez votre message');
+    console.log('prenom :' ,form.prenom.value);
+    console.log('nom :', form.nom.value);
+    console.log('email :',form.email.value );
+    console.log('message :', form.message.value);
   }
 });
