@@ -1,6 +1,6 @@
 //Mettre le code JavaScript lié à la page photographer.html
 async function getPhotographers() {
-  const jsonFile = "data/photographers.json";
+  const jsonFile = "./data/photographers.json";
   const response = await fetch(jsonFile);
   const data = await response.json();
   const photographers = await data;
